@@ -11,7 +11,7 @@ Status: seed source index
 | ZCG grant process | https://zcashcommunitygrants.org/selection/ | Application mechanics, forum requirement, community review, KYC, milestone/update expectations |
 | GitHub application repo | https://github.com/ZcashCommunityGrants/zcashcommunitygrants | Live grant applications and template patterns |
 | GitHub application template | https://github.com/ZcashCommunityGrants/zcashcommunitygrants/issues/new?template=grant_application.yaml | Required issue form and field schema; full YAML still needs export |
-| Non-technical guidance | https://forum.zcashcommunity.com/t/zcg-grants-guidance-for-non-technical-applications/52214 | Specific ZCG guidance for community, media, regional, and non-developer proposals |
+| Non-technical guidance | https://forum.zcashcommunity.com/t/zcg-grants-guidance-for-non-technical-applications/52214 | Specific ZCG guidance for community, media, regional, and non-developer proposals. NOTE: the official process page links to /t/guidance-for-non-technical-grant-applicants/49679 which returns 404. This URL also needs verification — may have been moved or merged. |
 | ZCG dashboard | https://docs.google.com/spreadsheets/d/1FQ28rDCyRW0TiNxrm3rgD8ai2KGUsXAjPieQmI1kKKg/edit?usp=sharing | Treasury, liabilities, grant payout and milestone tracking; needs CSV export |
 
 ## Priority 2 — committee reasoning / meeting minutes

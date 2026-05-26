@@ -1,24 +1,40 @@
 {
   "created": "2026-05-26",
+  "last_updated": "2026-05-27",
   "branch": "agent-z/corpus-seed-v1",
   "project": "Agent Z",
   "repo_at_creation": "groggs99/Ironbridge",
-  "status": "seed corpus branch",
+  "status": "seed corpus branch, first review complete",
   "objective": "Create the best possible instance of a Zcash-first grant companion running on IronClaw.",
-  "files_added": [
+  "files_added_v0": [
     "agent-z/README.md",
     "agent-z/corpus/zcash/00-source-index/source-index.md",
     "agent-z/corpus/zcash/01-official-process/zcg-approval-playbook.md",
     "agent-z/corpus/zcash/01-official-process/zcg-application-template-reconstructed.md",
     "agent-z/working-notes/agent-z-corpus-next-steps.md"
   ],
+  "files_added_review_1": [
+    "agent-z/CORPUS-REVIEW.md",
+    "agent-z/corpus/zcash/01-official-process/zcg-wishlist.md",
+    "agent-z/corpus/zcash/01-official-process/zcg-grant-process.md",
+    "agent-z/corpus/zcash/01-official-process/zcg-committee.md",
+    "agent-z/corpus/zcash/01-official-process/zcg-rfp-program.md",
+    "agent-z/corpus/zcash/01-official-process/zcg-funding-overview.md",
+    "agent-z/corpus/zcash/02-grant-examples/README.md",
+    "agent-z/corpus/zcash/02-grant-examples/completed-zewif.md",
+    "agent-z/corpus/zcash/02-grant-examples/declined-zenith-2025.md",
+    "agent-z/corpus/zcash/03-meeting-minutes/README.md",
+    "agent-z/corpus/zcash/04-governance-zips/zip-funding-summary.md"
+  ],
   "next_files_to_add": [
-    "full ZCG issue template YAML",
-    "bulk exported GitHub grant issues",
-    "full meeting minutes archive",
-    "ZCG dashboard CSV exports",
-    "monthly update examples",
-    "expanded ZIP notes",
+    "bulk exported GitHub grant issues (20-30 normalised)",
+    "full meeting minutes from all 2026 URLs",
+    "actual GitHub issue template YAML",
+    "forum post examples (3-5 good companion posts)",
+    "monthly update examples (3-5)",
+    "non-technical guidance (URL needs verification)",
+    "ZCG dashboard CSV export",
+    "full ZIP-1014, ZIP-1015, ZIP-1016 text",
     "grant evaluation fixtures"
   ],
   "division_of_responsibility": {
