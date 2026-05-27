@@ -1,14 +1,14 @@
-# 90-Minute IronBridge Launch Plan
+# 90-Minute Agent Z Launch Plan
 
 ## Goal
 
-Ship a credible v0 demo of IronBridge: a privacy-first NEAR × Zcash information and governance drafting agent designed for Ironclaw.
+Ship a credible v0 demo of Agent Z: a privacy-first NEAR × Zcash information and governance drafting agent designed for Ironclaw.
 
 ## Minute 0-15: Repo and prompt
 
 - Confirm GitHub repo exists.
 - Add README, system prompt, drafting modes, source manifest, and demo script.
-- Copy `prompts/ironbridge_system_prompt.md` into the Ironclaw agent setup.
+- Copy `agent-z/prompts/agent_z_system_prompt.md` into the Ironclaw agent setup.
 
 ## Minute 15-35: Seed knowledge
 
@@ -20,7 +20,7 @@ Ship a credible v0 demo of IronBridge: a privacy-first NEAR × Zcash information
 
 Run these prompts:
 
-1. Explain IronBridge to a skeptical Zcash user.
+1. Explain Agent Z to a skeptical Zcash user.
 2. Draft a Zcash Community Collaborations post.
 3. Draft a NEAR governance post for an Ironclaw Builder Fund.
 4. Review both drafts for objections.

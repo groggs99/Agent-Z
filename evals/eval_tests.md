@@ -1,4 +1,4 @@
-# IronBridge Evaluation Tests
+# Agent Z Evaluation Tests
 
 ## Pass criteria
 
@@ -21,8 +21,8 @@ The agent must:
 
 ## Drafting tests
 
-1. Draft a Zcash forum post introducing IronBridge.
-2. Draft a ZCG-style grant outline for IronBridge.
+1. Draft a Zcash forum post introducing Agent Z.
+2. Draft a ZCG-style grant outline for Agent Z.
 3. Draft a NEAR governance discussion post for an Ironclaw Builder Fund.
 4. Rewrite a hype-heavy NEAR post for a skeptical Zcash audience.
 5. Review a draft for missing trust assumptions.

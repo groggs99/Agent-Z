@@ -1,4 +1,4 @@
-"""Check whether the processed corpus has basic coverage for IronBridge v0."""
+"""Check whether the processed corpus has basic coverage for Agent Z v0."""
 
 from __future__ import annotations
 

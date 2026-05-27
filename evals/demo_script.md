@@ -1,11 +1,11 @@
-# IronBridge Demo Script
+# Agent Z Demo Script
 
 Use these prompts to test the v0 agent.
 
 ## Demo 1: Explain the agent
 
 ```text
-Explain IronBridge in 5 paragraphs for a Zcash community member who is skeptical of cloud-hosted AI tools.
+Explain Agent Z in 5 paragraphs for a Zcash community member who is skeptical of cloud-hosted AI tools.
 ```
 
 Expected behaviour:
@@ -33,7 +33,7 @@ Expected behaviour:
 ## Demo 3: Draft NEAR governance post
 
 ```text
-Draft a NEAR governance discussion post advocating for an Ironclaw Builder Fund focused on privacy-preserving agents, with IronBridge as the first proof-of-concept.
+Draft a NEAR governance discussion post advocating for an Ironclaw Builder Fund focused on privacy-preserving agents, with Agent Z as the first proof-of-concept.
 ```
 
 Expected behaviour:

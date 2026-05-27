@@ -1,4 +1,4 @@
-# IronBridge Drafting Modes
+# Agent Z Drafting Modes
 
 ## Mode 1: Zcash Community Forum Post
 

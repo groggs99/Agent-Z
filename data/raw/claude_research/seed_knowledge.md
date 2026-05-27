@@ -103,7 +103,7 @@ IronClaw uses four identity files that are automatically injected into the LLM s
 3. **USER.md** — User preferences and context
 4. **IDENTITY.md** — Core agent identity
 
-For IronBridge, this is important because we can map our agent configuration into these files rather than relying only on a single system prompt.
+For Agent Z, this is important because we can map our agent configuration into these files rather than relying only on a single system prompt.
 
 ### 1.7 Security Architecture
 
@@ -151,7 +151,7 @@ The basic flow:
 
 AI agents are better at expressing goals than manually constructing transactions. Intents allow an agent to express an objective while the infrastructure handles routing and execution.
 
-For IronBridge v0 we do not use Intents directly for execution. Instead, we explain them and help users reason about collaboration opportunities. Later versions might explore payments, grants, or workflow actions, but v0 stays read-only.
+For Agent Z v0 we do not use Intents directly for execution. Instead, we explain them and help users reason about collaboration opportunities. Later versions might explore payments, grants, or workflow actions, but v0 stays read-only.
 
 ### 2.4 NEAR × Zcash Relevance
 
@@ -183,7 +183,7 @@ A full HSP-style proposal usually requires:
 - Technical Specification
 - Budget
 
-For IronBridge, the agent should distinguish between:
+For Agent Z, the agent should distinguish between:
 
 - a discussion-stage forum post;
 - an HSP-style outline;
@@ -212,7 +212,7 @@ Bad NEAR governance posts are vague AI hype. Good posts explain what should be f
 
 NEAR Chain Signatures and MPC infrastructure are part of NEAR's broader chain abstraction story. They help NEAR accounts interact with other chains without users needing to manage separate key material for every chain.
 
-For the IronBridge v0 agent, this is contextual rather than core. The agent may mention it when explaining NEAR's chain abstraction stack, but should not overemphasize it unless the user asks.
+For the Agent Z v0 agent, this is contextual rather than core. The agent may mention it when explaining NEAR's chain abstraction stack, but should not overemphasize it unless the user asks.
 
 ### 4.2 Caution
 
@@ -300,9 +300,9 @@ The agent should not turn weak ideas into polished proposals. It should ask whet
 - the output benefits Zcash users;
 - the work overlaps with existing projects.
 
-### 6.4 IronBridge Relevance to ZCG
+### 6.4 Agent Z Relevance to ZCG
 
-IronBridge can help Zcash users prepare better grant ideas by:
+Agent Z can help Zcash users prepare better grant ideas by:
 
 - clarifying the problem;
 - identifying related forum threads;
@@ -330,7 +330,7 @@ Good Zcash forum posts tend to:
 - show awareness of prior work;
 - respect privacy assumptions.
 
-### 7.3 Categories Relevant to IronBridge
+### 7.3 Categories Relevant to Agent Z
 
 Likely relevant categories include:
 
@@ -342,7 +342,7 @@ Likely relevant categories include:
 
 ### 7.4 Zcash-Specific Objections to Expect
 
-When proposing IronBridge or any NEAR/Ironclaw collaboration, expect questions such as:
+When proposing Agent Z or any NEAR/Ironclaw collaboration, expect questions such as:
 
 - Why should Zcash users trust a NEAR-built runtime?
 - What data leaves the user's machine?
@@ -361,30 +361,30 @@ When proposing IronBridge or any NEAR/Ironclaw collaboration, expect questions s
 
 ### 8.1 Zcash MCP Server for AI Agent Integration
 
-There is active Zcash forum work around exposing Zcash functions to AI agents through an MCP server. This is important overlap. IronBridge should not pretend to be the first AI/Zcash project.
+There is active Zcash forum work around exposing Zcash functions to AI agents through an MCP server. This is important overlap. Agent Z should not pretend to be the first AI/Zcash project.
 
 Differentiation:
 
 - MCP server work exposes Zcash functionality to agents.
-- IronBridge focuses on ecosystem navigation, governance drafting, grant quality, and NEAR/Zcash collaboration context.
-- IronBridge v0 is read-only and does not operate wallets.
+- Agent Z focuses on ecosystem navigation, governance drafting, grant quality, and NEAR/Zcash collaboration context.
+- Agent Z v0 is read-only and does not operate wallets.
 
 ### 8.2 Zipher
 
-Zipher is described as a Zcash wallet for humans and agents. This is also relevant overlap. IronBridge should not compete with wallet projects in v0.
+Zipher is described as a Zcash wallet for humans and agents. This is also relevant overlap. Agent Z should not compete with wallet projects in v0.
 
 Differentiation:
 
 - Zipher is wallet/action infrastructure.
-- IronBridge is research, drafting, and governance support.
+- Agent Z is research, drafting, and governance support.
 
 ### 8.3 BazaarSwap / ZEC DeFi Discussion
 
-BazaarSwap and similar discussions show growing interest in ZEC interoperability and DeFi access. IronBridge can help users understand these discussions but should avoid trading advice or yield optimization.
+BazaarSwap and similar discussions show growing interest in ZEC interoperability and DeFi access. Agent Z can help users understand these discussions but should avoid trading advice or yield optimization.
 
 ### 8.4 NEAR AI / OpenClaw / Ironclaw
 
-IronBridge sits on top of NEAR's AI agent runtime work. It should credit NEAR AI and Ironclaw clearly, but avoid sounding like a pure NEAR promotional bot when talking to Zcash users.
+Agent Z sits on top of NEAR's AI agent runtime work. It should credit NEAR AI and Ironclaw clearly, but avoid sounding like a pure NEAR promotional bot when talking to Zcash users.
 
 ---
 
@@ -400,7 +400,7 @@ Core thesis:
 - Ironclaw gives NEAR a privacy-first agent runtime.
 - NEAR Intents gives agents a payment / execution layer.
 - NEAR should consider funding builders to create useful Ironclaw agents.
-- IronBridge can serve as the first proof-of-concept.
+- Agent Z can serve as the first proof-of-concept.
 
 ### 9.2 Zcash AI Solutions Grant Track Draft
 
@@ -418,7 +418,7 @@ Important framing:
 
 ## 10. IRONBRIDGE — AGENT PURPOSE
 
-IronBridge is a privacy-first NEAR × Zcash ecosystem research and governance drafting agent.
+Agent Z is a privacy-first NEAR × Zcash ecosystem research and governance drafting agent.
 
 Its core jobs:
 
@@ -428,9 +428,9 @@ Its core jobs:
 4. Draft NEAR governance discussion posts and HSP-style outlines.
 5. Surface likely objections and missing context before users post.
 
-### 10.1 What IronBridge Is Not
+### 10.1 What Agent Z Is Not
 
-IronBridge is not:
+Agent Z is not:
 
 - a trading assistant;
 - a price prediction bot;
@@ -442,7 +442,7 @@ IronBridge is not:
 
 ### 10.2 Success Criteria for v0
 
-IronBridge v0 succeeds if it can:
+Agent Z v0 succeeds if it can:
 
 - explain Ironclaw to a skeptical Zcash user;
 - draft a credible Zcash Community Collaborations post;
@@ -514,7 +514,7 @@ The next sources to ingest should be:
 
 Recommended public framing:
 
-> I'm building IronBridge: a privacy-first NEAR × Zcash research and drafting agent designed for Ironclaw.
+> I'm building Agent Z: a privacy-first NEAR × Zcash research and drafting agent designed for Ironclaw.
 >
 > v0 is read-only. It does not trade, vote, post, or handle wallets.
 >

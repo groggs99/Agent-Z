@@ -1,50 +1,64 @@
-# IronBridge
+# Agent Z
 
-**IronBridge** is a privacy-first NEAR × Zcash ecosystem research and governance drafting agent designed to run on Ironclaw.
+**Agent Z** is a Zcash-first grants companion agent designed to run on [IronClaw](https://docs.ironclaw.com). It helps applicants assess grant fit, draft stronger proposals, and navigate the Zcash Community Grants process.
 
-Its purpose is to help NEAR and Zcash users understand collaboration opportunities, draft better forum/governance/grant posts, and surface relevant context before proposing work.
+## What Agent Z does
 
-## v0 Scope
+- Assesses whether an idea fits the ZCG funding criteria and wishlist.
+- Identifies risks, weak points, and missing elements before submission.
+- Drafts GitHub grant applications and companion forum posts.
+- Recommends grant category, milestone structure, and budget breakdown.
+- Reviews drafts for likely committee objections.
+- Helps write monthly milestone updates.
+- Refuses trading advice, price predictions, wallet/private-key handling, impersonation, astroturfing, and governance manipulation.
 
-IronBridge v0 is deliberately narrow:
+## What Agent Z does not do
 
-- Answer questions about NEAR, Zcash, Ironclaw, NEAR Intents, governance, grants, and ecosystem collaboration.
-- Draft Zcash forum posts and ZCG-style grant outlines.
-- Draft NEAR governance discussion posts and HSP-style outlines.
-- Review drafts for likely objections, weak claims, missing evidence, privacy concerns, and community-fit issues.
-- Refuse trading advice, price predictions, wallet/private-key handling, impersonation, astroturfing, and governance manipulation.
+Agent Z is not a trading assistant, financial advisor, wallet agent, private-key handler, automatic poster, or governance manipulator. It is a pre-submission reviewer and drafting companion.
 
-## Why this exists
+## Architecture
 
-NEAR has agent infrastructure and chain abstraction through Intents. Zcash has a privacy-first community and a culture that is naturally cautious about cloud-hosted AI tools. Ironclaw creates a potential bridge: an auditable, privacy-first agent runtime that can help users participate more effectively without asking them to trust a generic cloud chatbot.
+Agent Z is a domain-specific agent deployed on IronClaw. IronClaw provides the agent runtime (chat interface, memory, skills engine, security). Agent Z provides the specialisation: identity files, grant-writing skills, and a curated corpus of ZCG process knowledge, grant precedents, and committee reasoning patterns.
 
 ## Repo structure
 
 ```text
-agent/                  Agent identity and operating rules
-prompts/                System prompt and drafting modes
-sources/                Source manifests and seed corpus list
-data/raw/claude_research/  Drop research notes here
-data/processed/         Generated chunks for ingestion
-docs/                   Launch plan and public-facing notes
+agent-z/
+  prompts/              Agent Z system prompt and drafting modes
+  corpus/
+    zcash/
+      00-source-index/  Master source list with URLs and priorities
+      01-official-process/  ZCG process, wishlist, committee, templates
+      02-grant-examples/    Normalised approved/declined/completed grants
+      03-meeting-minutes/   Committee meeting minutes and decision patterns
+      04-governance-zips/   ZIP-1014, 1015, 1016 funding mechanism context
+  working-notes/        Internal planning and next-step tracking
+  manifest.json         File inventory and project metadata
+  CORPUS-REVIEW.md      Claude's corpus assessment and gap analysis
+agent/                  Legacy agent profile (to be merged into agent-z/)
+prompts/                Legacy prompts (to be merged into agent-z/prompts/)
+data/                   Legacy research notes
+docs/                   Launch plan and notes
 evals/                  Demo script and evaluation tests
 scripts/                Corpus build and check scripts
 ```
 
-## v0 Launch Goal
+## Current status
 
-A working Ironclaw agent that can:
+Seed corpus (v0). The official ZCG process, wishlist, committee profiles, funding overview, and grant-fit scoring rubric are in place. Bulk grant examples and meeting minutes are the next priority. See `agent-z/CORPUS-REVIEW.md` for the full gap analysis.
 
-1. Explain Ironclaw to a skeptical Zcash user.
-2. Draft a credible Zcash Community Collaborations post.
-3. Draft a NEAR governance discussion post for an Ironclaw Builder Fund.
-4. Review both drafts for objections and weak assumptions.
-5. Refuse financial advice and manipulative governance requests.
+## Division of responsibility
 
-## Non-goals
+- **Niall**: integrator and shipping decision-maker.
+- **GPT**: corpus collection, formatting, scraping, markdown structuring, bulk data cleaning.
+- **Claude**: strategic design, skill definitions, mission configs, identity files, prompt architecture, MVP scoping.
 
-IronBridge is not a trading assistant, financial advisor, wallet agent, private-key handler, automatic poster, or governance manipulator.
+## MVP target
 
-## Status
+**Agent Z v0.1 — ZCG Grant Fit + Drafting Assistant**
 
-Initial scaffold. Claude research and additional primary sources should be added to `data/raw/claude_research/` and `sources/source_manifest_template.csv`.
+User describes an idea → Agent asks 2-3 targeted questions → Agent produces a grant-fit score, wishlist alignment, risks, recommended category, milestone plan, budget structure, GitHub application draft, and forum post draft.
+
+## Data sources
+
+All corpus data is from public sources: the ZCG website, GitHub grant applications, Zcash Community Forum, ZCG meeting minutes, and Zcash Improvement Proposals.
