@@ -3,8 +3,8 @@
   "last_updated": "2026-05-27",
   "branch": "agent-z/corpus-seed-v1",
   "project": "Agent Z",
-  "repo_at_creation": "groggs99/Ironbridge",
-  "status": "seed corpus branch, first review complete",
+  "repo": "groggs99/agent-z",
+  "status": "seed corpus branch, first review complete, renamed from IronBridge",
   "objective": "Create the best possible instance of a Zcash-first grant companion running on IronClaw.",
   "files_added_v0": [
     "agent-z/README.md",
@@ -25,6 +25,13 @@
     "agent-z/corpus/zcash/02-grant-examples/declined-zenith-2025.md",
     "agent-z/corpus/zcash/03-meeting-minutes/README.md",
     "agent-z/corpus/zcash/04-governance-zips/zip-funding-summary.md"
+  ],
+  "files_added_rename": [
+    "agent-z/prompts/agent_z_system_prompt.md",
+    "README.md (rewritten for Agent Z)"
+  ],
+  "files_removed_rename": [
+    "prompts/ironbridge_system_prompt.md"
   ],
   "next_files_to_add": [
     "bulk exported GitHub grant issues (20-30 normalised)",

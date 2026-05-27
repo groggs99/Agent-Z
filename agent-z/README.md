@@ -1,30 +1,34 @@
-# Agent Z Corpus Seed Pack
+# Agent Z — Corpus and Configuration
 
-Collected date: 2026-05-26
-Branch: `agent-z/corpus-seed-v1`
-Status: seed corpus, not complete.
+This directory contains everything that makes Agent Z a domain-specific grants companion: the system prompt, the knowledge corpus, and working notes.
 
-Purpose: provide the first structured corpus foundation for **Agent Z**, a Zcash-first grants companion running on IronClaw.
+## Directory structure
 
-This branch contains source-linked corpus notes, ZCG approval insights, and next-step ingestion instructions. It is intended to support later Claude-led identity files, skill definitions, mission configs, and prompt architecture.
+```text
+prompts/                Agent Z system prompt and drafting modes
+corpus/
+  zcash/
+    00-source-index/    Master source list with URLs and priorities
+    01-official-process/  ZCG process, wishlist, committee, templates, scoring
+    02-grant-examples/    Normalised approved/declined/completed grants
+    03-meeting-minutes/   Committee meeting minutes and decision patterns
+    04-governance-zips/   ZIP-1014, 1015, 1016 funding mechanism context
+working-notes/          Internal planning and next-step tracking
+manifest.json           File inventory and project metadata
+CORPUS-REVIEW.md        Claude's corpus assessment and gap analysis
+```
 
-## Operating objective
+## Corpus status
 
-Create the best possible instance of a domain-specific AI agent: a Zcash-first grant companion that improves the quality and approval-readiness of ZCG proposals.
-
-## Division of responsibility
-
-- Niall: integrator and final shipping decision-maker.
-- GPT: corpus collection, formatting, scraping strategy, markdown structuring, bulk data cleaning, and operational review.
-- Claude: strategic design, skill definitions, mission configs, identity files, prompt architecture, and MVP scoping.
+Seed corpus (v0). The official ZCG process, wishlist, committee profiles, and grant-fit scoring rubric are complete. See `CORPUS-REVIEW.md` for the full gap analysis and priority next steps.
 
 ## Important caveat
 
 This is not a full scrape. It is a curated seed corpus and approval playbook. The next step is bulk collection of complete GitHub issues, forum threads, meeting minutes, and ZCG dashboard exports.
 
-## Suggested ingestion approach
+## Corpus rules
 
-- Treat this branch as corpus v0.
-- Preserve source URLs and collection dates.
-- Replace seed summaries with full source exports when available.
-- Keep factual source material separate from derived approval-pattern notes.
+1. Preserve source URLs and collection dates on every file.
+2. Replace seed summaries with full source exports when available.
+3. Keep primary source material separate from derived approval-pattern notes.
+4. Separate facts, derived patterns, tactical guidance, and stale/unverified notes.
